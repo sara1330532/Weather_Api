@@ -1,8 +1,9 @@
 //This React component displays detailed weather information, including temperature, wind, humidity, and precipitation.
 // It also shows the weather forecast for the past few hours based on API data.
-import './Weather.css'
+import '../style/Weather.css'
 
 const Weather = ({ data }) => {
+
 //If we did not receive information from the server,
 // we will display an empty div.
     if (!data) {

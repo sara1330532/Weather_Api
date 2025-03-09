@@ -3,8 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import axios from 'axios';
 
-import './App.css'
-import OurApp from './OurApp'
+import './style/App.css'
+import OurApp from './components/OurApp'
 
 
 function App() {

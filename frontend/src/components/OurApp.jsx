@@ -3,17 +3,17 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios';
 
-import Weather from './Weather'
-import './OurApp.css'
-import logo from './assets/logo.svg'
+import Weather from '../components/Weather'
+import '../style/OurApp.css'
+import logo from '../assets/logo.svg'
 
 const OurApp = () => {
     const [city, setCity] = useState('');
     const [weather, setWeather] = useState(null);
     const [error, setError] = useState(null);
-    const [weather_yes, setWeather_yes] = useState(null);
+    
 
-    const BASE_URL = "http://localhost:5000/api/weather"
+    const BASE_URL = import.meta.env.VITE_BASE_URL;
     const showWeather = async (e) => {
         e.preventDefault();
         try {
