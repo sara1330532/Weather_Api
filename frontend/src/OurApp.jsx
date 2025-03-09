@@ -1,3 +1,5 @@
+//This  component is a weather app that allows users to 
+//check the weather of a city. It fetches data from an API, displays the weather information.
 import { useState, useEffect } from 'react'
 import axios from 'axios';
 

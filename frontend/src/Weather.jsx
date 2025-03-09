@@ -1,7 +1,10 @@
+//This React component displays detailed weather information, including temperature, wind, humidity, and precipitation.
+// It also shows the weather forecast for the past few hours based on API data.
 import './Weather.css'
 
 const Weather = ({ data }) => {
-
+//If we did not receive information from the server,
+// we will display an empty div.
     if (!data) {
         return (
             <div className="weather-container-wrapper">
@@ -13,6 +16,7 @@ const Weather = ({ data }) => {
     let hours = date.getHours();
     let arrHours = data.forecast.forecastday[0].hour;
 
+    //This function accepts a date and returns it in a different format.
     const formatDateAndTime = (time) => {
         if (!time) return "לא זמין";
         const day = String(time.getDate()).padStart(2, '0');
@@ -22,6 +26,7 @@ const Weather = ({ data }) => {
         const minutes = String(time.getMinutes()).padStart(2, '0');
         return `${day}/${month}/${year} at ${hours}:${minutes}`;
     };
+    //This function accepts a date and extracts the hour and minutes from it.
     const setHoursAndMinutes = (time) => {
         return time ? time.substring(11, 16) : "";
     };

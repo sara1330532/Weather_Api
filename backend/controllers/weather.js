@@ -1,3 +1,6 @@
+//This page defines the server's actions and calls to the external server
+//and handles errors
+
 import axios from 'axios';
 
 

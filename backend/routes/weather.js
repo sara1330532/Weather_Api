@@ -1,3 +1,4 @@
+//This page associates the actions for server routing.
 import {Router} from "express" ;
 
 import {get_weather_forecast} from "../controllers/weather.js" ;

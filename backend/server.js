@@ -1,3 +1,4 @@
+//This is an Express.js server that handles weather-related API requests.
 import express from 'express';
 import cors from'cors';
 import dotenv from'dotenv';
