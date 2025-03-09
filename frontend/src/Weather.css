@@ -1,0 +1,115 @@
+.weather-container-wrapper {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #DDE4E6;
+    margin: auto;
+
+}
+
+.weather-container {
+    width: 75%;
+    height: 93%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #27737D;
+}
+
+.weather-header {
+    text-align: center;
+}
+
+.weather-header h2 {
+    margin: 0;
+    font-weight: 300;
+    color: #bbcccf;
+    margin-bottom: 0%;
+
+}
+
+.weather-header h3 {
+    font-weight: 300;
+    color: #A8C6CB;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 1rem;
+}
+
+.weather-main {
+    text-align: center;
+    color: #FFFFFF;
+    
+}
+
+.weather-main h1 {
+    font-size: 5rem;
+    margin-bottom:2px;
+}
+
+.weather-main h2 {
+    font-size: 1.5rem;
+    margin-top: 0px;
+    font-weight: 300;
+
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:30px;
+}
+
+.weather-info h3 {
+
+    font-weight: 300;
+    margin: 4px ;
+}
+
+.weather-info .column {
+    flex: 1;
+    text-align: center;
+    margin-right: 10%;
+}
+
+.weather-hourly {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: auto;
+    text-align: center;
+    font-family: #FFFFFF;
+}
+
+.weather-hourly h3 {
+    margin: 4px 0;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.weather-info h3 {
+    margin: 5px 0;
+    font-weight: 100;
+    font-size: 1.2rem;
+
+}
+
+.weather-info-title {
+    color: #bbcccf;
+
+}
+
+.weather-info-details {
+    color: #E8F1F2;
+    font-size: 1rem;
+}
+
+.weather-hourly-title {
+    color: #A8C6CB;
+    margin-top: 50px;
+}
+
+.weather-hourly-temp {
+    color: #FFFFFF;
+}
